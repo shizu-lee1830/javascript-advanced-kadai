@@ -9,7 +9,7 @@ const typedfield = document.getElementById('typed');
 const wrap = document.getElementById('wrap');
 const start = document.getElementById('start');
 const count = document.getElementById('count');
-const textCount = document.getElementById('textcount');
+const scoreField = document.getElementById('scorefield');
 
 // 複数のテキストを格納する配列
 const textLists = [
@@ -67,7 +67,7 @@ const keyPress = e => {
   untyped = untyped.substring(1);
   typedfield.textContent = typed;
   untypedfield.textContent = untyped;
-  textCount.textContent = score;
+  scoreField.textContent = score;
 
   // テキストがなくなったら新しいテキストを表示
   if(untyped === '') {
